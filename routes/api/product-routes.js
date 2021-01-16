@@ -11,6 +11,11 @@ router.get('/', (req, res) => {
       {
         model: Category,
         attributes: ['category_name']
+      },
+      {
+        model: Tag,
+        attributes: ['tag_name'],
+        through: ProductTag,
       }
     ]
    })
@@ -19,8 +24,6 @@ router.get('/', (req, res) => {
         console.log(err);
         res.status(500).json(err);
       });
-  // find all products
-  // be sure to include its associated Category and Tag data
 });
 
 // get one product
