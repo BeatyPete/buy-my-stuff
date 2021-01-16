@@ -1,4 +1,4 @@
-# Employee Peeper
+# Buy my stuff
 ![dump](https://img.shields.io/badge/License-MIT-green)
 
 ## Description 
